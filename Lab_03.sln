@@ -1,24 +1,45 @@
-﻿
-le
-VisualStudioVersion = 17.5.33627.172
-MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Lab_03", "Lab_03\Lab_03.csproj", "{8343D14A-3CF3-4F7A-BF92-6655B07498BF}"
-EndProject
-Global
-	GlobalSection(SolutionConfigurationPlatforms) = preSolution
-		Debug|Any CPU = Debug|Any CPU
-		Release|Any CPU = Release|Any CPU
-	EndGlobalSection
-	GlobalSection(ProjectConfigurationPlatforms) = postSolution
-		{8343D14A-3CF3-4F7A-BF92-6655B07498BF}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{8343D14A-3CF3-4F7A-BF92-6655B07498BF}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{8343D14A-3CF3-4F7A-BF92-6655B07498BF}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{8343D14A-3CF3-4F7A-BF92-6655B07498BF}.Release|Any CPU.Build.0 = Release|Any CPU
-	EndGlobalSection
-	GlobalSection(SolutionProperties) = preSolution
-		HideSolutionNode = FALSE
-	EndGlobalSection
-	GlobalSection(ExtensibilityGlobals) = postSolution
-		SolutionGuid = {6D27DBE6-0300-4CF4-B8A3-80C597BB4AB4}
-	EndGlobalSection
-EndGlobal
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Runtime.Remoting.Services;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace Lab_03
+{
+    internal class Program
+    {
+        static void Main(string[] args)
+        {
+            
+          
+            Console.Write("Enter your name");
+            string name = Console.ReadLine();
+            Console.WriteLine("Hi" + name);
+
+            int marks = 50;
+
+            if (marks >= 75)
+            {
+                Console.Write("Grade: A");
+            }
+            else if (marks >= 60 && marks < 75)
+            {
+                Console.Write("Grade: B");
+            }
+            else if (marks >= 50 && marks < 60)
+            {
+                Console.Write("Grade: C");
+            }
+            else if (marks >= 40 && marks < 50)
+            {
+                Console.Write("Grade: D");
+            }
+            else
+            {
+                Console.Write("Fail");
+            }
+            Console.ReadLine();
+        }
+    }
+}
